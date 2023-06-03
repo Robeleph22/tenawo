@@ -1,0 +1,2379 @@
+{
+	"info": {
+		"_postman_id": "006f612e-dfdc-446a-8a85-1bf6df9f054c",
+		"name": "Tenawo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17940246"
+	},
+	"item": [
+		{
+			"name": "Pharmaceutical wholesalers",
+			"item": [
+				{
+					"name": "reserve",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNWYxYjVmNDcxOGRiNDI2MTUxM2FlYTdkOTc2NjEyMzM3YTBlODZlYzYzMGQ3YTA1OTA2OTUyZGJhOTRmYjgxZDk2NzhlNzdjYjIxMmE4ZmIiLCJpYXQiOjE2NDAwNzM0NTIuMTUyMDExLCJuYmYiOjE2NDAwNzM0NTIuMTUyMDE4LCJleHAiOjE2NzE2MDk0NTIuMDg2MjIyLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.EVYU2H1Bo-4vSt46bBEMjvzWH6NP6u3rx-DWVwXNHTNqP-il_Rkd6dldn72_tVic-V4-1Z2Pjar66tdvhfEwodfT_doo3aFbP5KoTBg9-BL65d19b1nGtYkGlhDKwA7neEhuHcX5aIQXSKNVbKffWdegm5kendy9d9fI3ablkGL6TFYj-W1wK4YPlUrjDkpbwUHdY20nmDU0nxtqBEBuPfAGF14-YOrkJ9VPjizkkDt70DLL2jcJO4xeVIbn-TtPwYwKfQLCd_txwYz_n1A74HdXF0Lt8UWN32W2lwn9AzZTUZexXoHxXqtVkMZTwrs-DA9LysPBpoJdaUieVgHcnnkDx8IvM-FVIypJ1kWC18kqGaZzQnd5gJF8MbNyD7c--khV4w8yBpSBC35V-xraS4pb6zwp6UwPXToptYKcwg3YeHIY9HSRzJ3jvGX1qfn0VRKPCCz7HhdXgKfMGll-rgLvo1v81TmCueKxt6SRzFDMptBL7fZWcfLZ1YiZFmHoC2sWVAhDo6_pzurZ4FYiKzWb4uARQFlNUYq4GOHJ6cmevGSI9w9LPDgCMxgT62w8U1YtNpIjATy7p2e_C1GChk2xj8rTfRJsJxbG03ebACFMnxGD-MKVQMN0yriPUGfaYa6gIOCGSx0OPLdU2NWzpPhbgb00C82sPEH-pnC37Fw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "pharmaceutical_wholesaler_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/auth/pharmaceutical-wholesalers/order",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"pharmaceutical-wholesalers",
+								"order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_all_pw_products",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiY2IzNGVhYTZiZTk0OTRhNWQ1MGUxMDE2ZTEyMGE0ZTVmNjAzNmQ4YzhhN2JiMjA1NTc2YmNmYzVhMGJkM2RkM2MxZDBhOWVmZTI5NjczYmQiLCJpYXQiOjE2NTc1Mjc2MjguMDA4NTc5LCJuYmYiOjE2NTc1Mjc2MjguMDA4NTgyLCJleHAiOjE2ODkwNjM2MjguMDAzODU3LCJzdWIiOiI0MiIsInNjb3BlcyI6W119.WRnW7ZXGClQFznepF5tRj7yq2K2Q0N46nleaLQkDipByCjRdY9W5Kk8jLRBAGpSm5r9fzA7Nc5IfHOlFdDzBaSsPmz1GLrJmEfPdGySihbC3DkABHMuoI1inB_uW0iNhLuhGu_XrJLurTyVxy9GnZlVOgSvMCavrX8T6WZRunjwvIv5MMlFvZtEcvCqCXsxBwLiw-HyoBezgU-ZVYMFV1G3aGuV1KAN-WqkdfTtpU3qT1KsHm7Q-eUzXYWy6s5dMkzhpJNv5Ym5rYQ3CXp9tOYnohoreQ1l9kk7YhrS9GEVOEzA50f0mzHm3f0o7L07oRb40Kkp8X5EntmkEZrOKZLbRzTe9S0jv6RH7P6jzuPjBeUHL3QFcV2fe09tJSSuSbXQSNsN8ASXlIi4jia_DBq31PyP--xdyiR0PfNFVIdM9vp_7Yo9hYv47o8GTCg07FW-4YouK1yRU3oWZRbPYoJvtUJ_-RLGFUX0BIfvMfoPUQOM0xL8xzpMJ6dPJjd__t5rIBbZ6KxqS_Lodu_KG66Yt-qm6XSvovYBnu6TZ9_6BVj2sFSZ3hrZnY5qeZ78eKlVEKei-V13YljPmPUUdymUehr7DX0XdZu15z6C59utzDGvT-WdQrwEFV8tHuTzBfBWaoq1YE_ajXV-aumA3TBSFXAAzL4FolaBVNwwngFk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "client_current_latitude",
+									"value": "9.016148",
+									"type": "text"
+								},
+								{
+									"key": "client_current_longitude",
+									"value": "38.824198",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/auth/pharmaceutical-wholesalers/products",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"pharmaceutical-wholesalers",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search_pw_products",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiY2IzNGVhYTZiZTk0OTRhNWQ1MGUxMDE2ZTEyMGE0ZTVmNjAzNmQ4YzhhN2JiMjA1NTc2YmNmYzVhMGJkM2RkM2MxZDBhOWVmZTI5NjczYmQiLCJpYXQiOjE2NTc1Mjc2MjguMDA4NTc5LCJuYmYiOjE2NTc1Mjc2MjguMDA4NTgyLCJleHAiOjE2ODkwNjM2MjguMDAzODU3LCJzdWIiOiI0MiIsInNjb3BlcyI6W119.WRnW7ZXGClQFznepF5tRj7yq2K2Q0N46nleaLQkDipByCjRdY9W5Kk8jLRBAGpSm5r9fzA7Nc5IfHOlFdDzBaSsPmz1GLrJmEfPdGySihbC3DkABHMuoI1inB_uW0iNhLuhGu_XrJLurTyVxy9GnZlVOgSvMCavrX8T6WZRunjwvIv5MMlFvZtEcvCqCXsxBwLiw-HyoBezgU-ZVYMFV1G3aGuV1KAN-WqkdfTtpU3qT1KsHm7Q-eUzXYWy6s5dMkzhpJNv5Ym5rYQ3CXp9tOYnohoreQ1l9kk7YhrS9GEVOEzA50f0mzHm3f0o7L07oRb40Kkp8X5EntmkEZrOKZLbRzTe9S0jv6RH7P6jzuPjBeUHL3QFcV2fe09tJSSuSbXQSNsN8ASXlIi4jia_DBq31PyP--xdyiR0PfNFVIdM9vp_7Yo9hYv47o8GTCg07FW-4YouK1yRU3oWZRbPYoJvtUJ_-RLGFUX0BIfvMfoPUQOM0xL8xzpMJ6dPJjd__t5rIBbZ6KxqS_Lodu_KG66Yt-qm6XSvovYBnu6TZ9_6BVj2sFSZ3hrZnY5qeZ78eKlVEKei-V13YljPmPUUdymUehr7DX0XdZu15z6C59utzDGvT-WdQrwEFV8tHuTzBfBWaoq1YE_ajXV-aumA3TBSFXAAzL4FolaBVNwwngFk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "client_current_latitude",
+									"value": "9.016148",
+									"type": "text"
+								},
+								{
+									"key": "client_current_longitude",
+									"value": "38.824198",
+									"type": "text"
+								},
+								{
+									"key": "search",
+									"value": "a",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/auth/pharmaceutical-wholesalers/search",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"pharmaceutical-wholesalers",
+								"search"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Meedical wholesalers",
+			"item": [
+				{
+					"name": "reserve",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "medical_wholesaler_id",
+									"value": "4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/auth/medical-wholesalers/order",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"medical-wholesalers",
+								"order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search_mw_products",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiY2IzNGVhYTZiZTk0OTRhNWQ1MGUxMDE2ZTEyMGE0ZTVmNjAzNmQ4YzhhN2JiMjA1NTc2YmNmYzVhMGJkM2RkM2MxZDBhOWVmZTI5NjczYmQiLCJpYXQiOjE2NTc1Mjc2MjguMDA4NTc5LCJuYmYiOjE2NTc1Mjc2MjguMDA4NTgyLCJleHAiOjE2ODkwNjM2MjguMDAzODU3LCJzdWIiOiI0MiIsInNjb3BlcyI6W119.WRnW7ZXGClQFznepF5tRj7yq2K2Q0N46nleaLQkDipByCjRdY9W5Kk8jLRBAGpSm5r9fzA7Nc5IfHOlFdDzBaSsPmz1GLrJmEfPdGySihbC3DkABHMuoI1inB_uW0iNhLuhGu_XrJLurTyVxy9GnZlVOgSvMCavrX8T6WZRunjwvIv5MMlFvZtEcvCqCXsxBwLiw-HyoBezgU-ZVYMFV1G3aGuV1KAN-WqkdfTtpU3qT1KsHm7Q-eUzXYWy6s5dMkzhpJNv5Ym5rYQ3CXp9tOYnohoreQ1l9kk7YhrS9GEVOEzA50f0mzHm3f0o7L07oRb40Kkp8X5EntmkEZrOKZLbRzTe9S0jv6RH7P6jzuPjBeUHL3QFcV2fe09tJSSuSbXQSNsN8ASXlIi4jia_DBq31PyP--xdyiR0PfNFVIdM9vp_7Yo9hYv47o8GTCg07FW-4YouK1yRU3oWZRbPYoJvtUJ_-RLGFUX0BIfvMfoPUQOM0xL8xzpMJ6dPJjd__t5rIBbZ6KxqS_Lodu_KG66Yt-qm6XSvovYBnu6TZ9_6BVj2sFSZ3hrZnY5qeZ78eKlVEKei-V13YljPmPUUdymUehr7DX0XdZu15z6C59utzDGvT-WdQrwEFV8tHuTzBfBWaoq1YE_ajXV-aumA3TBSFXAAzL4FolaBVNwwngFk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "client_current_latitude",
+									"value": "9.016148",
+									"type": "text"
+								},
+								{
+									"key": "client_current_longitude",
+									"value": "38.824198",
+									"type": "text"
+								},
+								{
+									"key": "search",
+									"value": "o",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/auth/medical-wholesalers/search",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"medical-wholesalers",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_all_mw_products Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiY2IzNGVhYTZiZTk0OTRhNWQ1MGUxMDE2ZTEyMGE0ZTVmNjAzNmQ4YzhhN2JiMjA1NTc2YmNmYzVhMGJkM2RkM2MxZDBhOWVmZTI5NjczYmQiLCJpYXQiOjE2NTc1Mjc2MjguMDA4NTc5LCJuYmYiOjE2NTc1Mjc2MjguMDA4NTgyLCJleHAiOjE2ODkwNjM2MjguMDAzODU3LCJzdWIiOiI0MiIsInNjb3BlcyI6W119.WRnW7ZXGClQFznepF5tRj7yq2K2Q0N46nleaLQkDipByCjRdY9W5Kk8jLRBAGpSm5r9fzA7Nc5IfHOlFdDzBaSsPmz1GLrJmEfPdGySihbC3DkABHMuoI1inB_uW0iNhLuhGu_XrJLurTyVxy9GnZlVOgSvMCavrX8T6WZRunjwvIv5MMlFvZtEcvCqCXsxBwLiw-HyoBezgU-ZVYMFV1G3aGuV1KAN-WqkdfTtpU3qT1KsHm7Q-eUzXYWy6s5dMkzhpJNv5Ym5rYQ3CXp9tOYnohoreQ1l9kk7YhrS9GEVOEzA50f0mzHm3f0o7L07oRb40Kkp8X5EntmkEZrOKZLbRzTe9S0jv6RH7P6jzuPjBeUHL3QFcV2fe09tJSSuSbXQSNsN8ASXlIi4jia_DBq31PyP--xdyiR0PfNFVIdM9vp_7Yo9hYv47o8GTCg07FW-4YouK1yRU3oWZRbPYoJvtUJ_-RLGFUX0BIfvMfoPUQOM0xL8xzpMJ6dPJjd__t5rIBbZ6KxqS_Lodu_KG66Yt-qm6XSvovYBnu6TZ9_6BVj2sFSZ3hrZnY5qeZ78eKlVEKei-V13YljPmPUUdymUehr7DX0XdZu15z6C59utzDGvT-WdQrwEFV8tHuTzBfBWaoq1YE_ajXV-aumA3TBSFXAAzL4FolaBVNwwngFk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "client_current_latitude",
+									"value": "9.016148",
+									"type": "text"
+								},
+								{
+									"key": "client_current_longitude",
+									"value": "38.824198",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/auth/medical-wholesalers/products",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"medical-wholesalers",
+								"products"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Doctor",
+			"item": [
+				{
+					"name": "Get All Doctor",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/auth/doctors",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"doctors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Doctor",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "searchDoctor",
+									"value": "Tuesday ",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://tenawo.com/auth/doctor/search/fsd",
+							"protocol": "https",
+							"host": [
+								"tenawo",
+								"com"
+							],
+							"path": [
+								"auth",
+								"doctor",
+								"search",
+								"fsd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Book",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "doctor_availablity_id",
+									"value": "219",
+									"type": "text"
+								},
+								{
+									"key": "book_for",
+									"value": "Online",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/auth/doctor/appointment",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"doctor",
+								"appointment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Finish Payment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODc3OTUwMmQ2YTNhMDE2YmZhODMwYmE3NzkxNTRkOGE1M2JhODZmYTNmMjdlNDQ4MzljNzE1YjA3YjdjYWVjYTFhMDgxNTQ1Mjk3ZDA3MWYiLCJpYXQiOjE2NDczNDY5OTguNzA5MzYsIm5iZiI6MTY0NzM0Njk5OC43MDkzNzIsImV4cCI6MTY3ODg4Mjk5OC41Njk4ODMsInN1YiI6IjEzIiwic2NvcGVzIjpbXX0.tRvMs24BQq6RTjZHSNEwiiZD72hOxKb3DFgMhZB0DUh9w-s2M6DTYAF3QY2n00iGUnQJm60K3kcjT_q4YeDnJuXC_yRje5OyEXRnPW69RbywtxwfKS42LhmEIqbUv1TA6FEqGa5nHjRE5QDIdzmDJ3dAMspmImUQItgW0sFTlBI7Rau_zwKibf5gva29TTsQNo0S-BWRKoyltneiNehjyivaxt0i2voQhfmSKnnLf12MCOs-H2HkJ_xWay_HHOxMJmuAoIn5D21FSis86XGC2qPCbnMSnAzv5XRiVzldGg2bdeGPbYvBd2ndGC0BDaRjSiz78SZG15wuQhV0iez188-nY9INWT-aal-7QKAI4oSbalbBN7xmx4f-Tr2n-dQgPNcZozgIWUKw_i2jh6GUhdGyO5QjMk5m1-V4qghKqHSRslWQdZRX821gTPMV2Vw3oV9oOrJFFjgGIQPK7-wCPFqvB7yqySSvuoKu-hSWmQzxLgq218KfFQxJWWilKdLIlPvyifFWDPyDpOa58cenzEJ42zhxhzMmRkoepOEFfaDDXLzprNIx0O5EcrG3MkTcLPd3v84PWX7kQV7vBupa1Ws-TzuTjrPxsldgiBZJmobqJq4ZSmwjWpaogHQp8KN-XEwFuiEIfGaWrY043iHlIIxSDaXvfRei5vqT6N9ToI0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYjVlMThmNWMyYzUyZThmNTk2NTBmZWZkNzM2NjkyZjE1MWJiNWY5NTk5YzZiM2E1ZDgxYWFiZmU1Y2M3ZjMzMjlmNjFhOTBlOTM0ZmIxYmMiLCJpYXQiOjE2NDczNDY5MTEuNjcyMDMzLCJuYmYiOjE2NDczNDY5MTEuNjcyMDQsImV4cCI6MTY3ODg4MjkxMS4zMDk2MjEsInN1YiI6IjEzIiwic2NvcGVzIjpbXX0.pijLtghZhu7zLhRjUu_WaYb-YxdeyhBfN9n70Q2O73VRrD0Z-2BeQM4bKk59VQhN56ZNe8vVmGbi9tfBLL5bKHgVkXft5_2jzgEPIihJkOsaqT-LDjxJDgFTV03Ndg-J3_rarcpKM8azf_Su6HrXy6D2FlvkDCiBC0lFrpb7Hexv5la_qr0HTsw-ZKIUFX_3W1asvUGxP-ZkW6wVnZg3eui7ZiQBpb5d3eshgiAjXTGMreCT9mXF2cu_dU-OEs5-o5Sh4aP3WyKayyA9xCQ4w6K1fWoAB27FdFQ6X5BV6rX4H6D037KbiGMoyfZPnyfvie55GGd3gU3XtM84sLc9PkR__VYCrt3kRFW_Milxn__Wih1txtHGkS26F9WU_r6Xd9hNo7LD-GsBwq4NBo0p1fNWjo__cQ-PnNyRpKI-ceo6jGA-TouVyXMhscGeejb8kUqBKGWEw_oHxAmfPifTm1mzr5lRhXHda9FvVc8E6W1YDC-c626Xh0xqYvm6ydFx8t8H17UeLDgn70GfcCxknN7VNkad6vjYIUCjY3-4HSnrp_wHwp4CDKUEcB1GIwHV8l_h8a27clR3rLeejMBFz-mFWAubkvDynxsyHGzmpkFQSc7feXiRqucC1UgTTm1f2TC1b55SPJeLb24qHfjoWwqBdpQVVVFTcQijnX64kWs",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "appointment_number",
+									"value": "MON220315113358",
+									"type": "text"
+								},
+								{
+									"key": "receipt",
+									"type": "file",
+									"src": "/C:/Users/AmanD/Downloads/qr.jpg"
+								},
+								{
+									"key": "payment_method",
+									"value": "Awash Bank",
+									"type": "text"
+								},
+								{
+									"key": "service_type",
+									"value": "doctor",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/auth/cleint/doctor/appointments/paymnet/finish",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"cleint",
+								"doctor",
+								"appointments",
+								"paymnet",
+								"finish"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "doc categories",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dev}}doctor/categoroes",
+							"host": [
+								"{{dev}}doctor"
+							],
+							"path": [
+								"categoroes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "subcategories",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dev}}doctor/sub-categoroes/5",
+							"host": [
+								"{{dev}}doctor"
+							],
+							"path": [
+								"sub-categoroes",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "doc by sub",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dev}}doctor/list/1",
+							"host": [
+								"{{dev}}doctor"
+							],
+							"path": [
+								"list",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Homecare",
+			"item": [
+				{
+					"name": "reserve",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODkzMmEwMjNlYTdkNDNiYzg4YzZhNmUzYmZkNWUyZTgzZWVjZjEzYjRlYTRmMWY3ZTE0NTdmOTQ4NTk4ZGMzZWJkZTMzZmIyOThiOGViZjgiLCJpYXQiOjE2NDAyNTE1NDMuNjI1ODU0LCJuYmYiOjE2NDAyNTE1NDMuNjI1ODY3LCJleHAiOjE2NzE3ODc1NDIuOTUyMzY2LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.XD2acD3uhDOk5umPq7UkDigWrUa1B8kep1140uAVsx7Omz9W3sAniLFMeY_kcPOdu0WABElxWMwsT5V_lwrSi2ofa-_XMJxlQZ1aKv24c38AXwzePzB2kT5D3SPJUg5ixlCEw9AxTG-7BmacOxq208EJbIqxltzak8MjVWe7FS_AgHAyfcUAxgrQToofRZnPLNEyoQxbVnNv3yYEmudaVY84nhBgR70kF_WIGI4qsbVMIxD6KRPFmI2DRAljkRdTPvCSkedk6ibQjf6rpfzBYE_bzWfH5CHk-edZsxQueQ5q8EALR6XV7Z035wPcpeoqD9gMzjqqBC1zxfp6ImpXofNypTyWbOoOrGDXy1kCSPBerzPaWLMiR3Cwsb5JUlZohfJqYwPRcqwPJA_nZqpEy7grMn5LAiaEKtw_l49ywNBWM_QIYNQ9XNAOTfMQdiQ-6qECWnOfRaTiSc8jO493wxSgGIzFdCw-PnJbvRlnYetf6HcW_tUCZVXUAH-Fw7KyUh0XArvCAH9bmT8uIQCGKS7EbEOEKMep82q622h4ArgwQkC1XMgaMlRV7kdQP3oqpAmEktOZSpcZuMEOLfbgyayob6JBfONwrQvg_Mq3K36-pc6TH1Mwdi0ub1EXyoulB6KS9cLMKWkyY5wEGHY5q7j16sVTFTq-D2WSqGt8_Yg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "homecare_id",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/auth/homecare/reserve",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"homecare",
+								"reserve"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_all_homecare_service",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGU5YWNlZWNmYTFiNjgzZDhlNDVjMjMxNTNmMGQ2NjkwODdkMDA4MjY0ODBhODI3MmI1ODkxYjg0NGI0MDEzYTM4YzI0MzBhMTdmZWIwNzYiLCJpYXQiOjE2NTc2NTEwMzEuMDQ0NzU5OTg4Nzg0NzkwMDM5MDYyNSwibmJmIjoxNjU3NjUxMDMxLjA0NDc2MzA4ODIyNjMxODM1OTM3NSwiZXhwIjoxNjg5MTg3MDMxLjA0MjY3NTk3MTk4NDg2MzI4MTI1LCJzdWIiOiI0MiIsInNjb3BlcyI6W119.iLwb1D2cGXEgEBetqHjGZe-akWq52NxfjyBNY4AxtdwWLqWchzOccWq6byBFjrtfSgezWmglBPt_e7R2Y6eND9tO-7F5C_M7Vmn_pyf8iEI7i30K5TZSWYNlR0XjWj_qQs_4n_dZPttOh0cgvH4lsbRsThW2j_kuX85cLm0NiCG3MXWGTc1L47U_PVZwftw3TV00qyGLAt0vjRjGbF87BsPd1WQ05i1Mpz1AtVgp8iqLV4q44ZWKh0iOdCwtZ_EliLjX3Yxttso2MAXEJr4zisQxY-r0fPNr3Dq8ymkz3uGMM6_gJztb0_2g33YXcUA-1g0WUQlAI0w6iuH2w8yFl_37ooLSv9p6PBI3_1aHLzPXyBijtJ91QH4eykS43zJAYTgib9CVa3m5TacUlr4rBad_cN0Tw0CjEnte_vvzvIQzP00_Ei9eXcQ-boOx1Y1K4CjLem5kY1QBl8CLEQYClCHgqtAIAl_7zu2LIf5hoiuUD42h4uFxpmEyv1yrB6dF95V1H1e7xJguRXey5s9YP5kQqYBWKyitCkHx-iDtDPx7SEn-jy_fS0ofMfwuBZqyly-T4_Kl2hu1unF0gY_VZ_zJYPHdpFZNKm2AOeqDuyI6eoUWjQ3YahiVYAlvpj8pJ_IsQexsWqs-QFnvidbNz1r_ABF7lX6gDXyghcvpxhU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "client_current_latitude",
+									"value": "9.016148",
+									"type": "text"
+								},
+								{
+									"key": "client_current_longitude",
+									"value": "38.824198",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/auth/homecare/service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"homecare",
+								"service"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search_homecare_service",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiY2IzNGVhYTZiZTk0OTRhNWQ1MGUxMDE2ZTEyMGE0ZTVmNjAzNmQ4YzhhN2JiMjA1NTc2YmNmYzVhMGJkM2RkM2MxZDBhOWVmZTI5NjczYmQiLCJpYXQiOjE2NTc1Mjc2MjguMDA4NTc5LCJuYmYiOjE2NTc1Mjc2MjguMDA4NTgyLCJleHAiOjE2ODkwNjM2MjguMDAzODU3LCJzdWIiOiI0MiIsInNjb3BlcyI6W119.WRnW7ZXGClQFznepF5tRj7yq2K2Q0N46nleaLQkDipByCjRdY9W5Kk8jLRBAGpSm5r9fzA7Nc5IfHOlFdDzBaSsPmz1GLrJmEfPdGySihbC3DkABHMuoI1inB_uW0iNhLuhGu_XrJLurTyVxy9GnZlVOgSvMCavrX8T6WZRunjwvIv5MMlFvZtEcvCqCXsxBwLiw-HyoBezgU-ZVYMFV1G3aGuV1KAN-WqkdfTtpU3qT1KsHm7Q-eUzXYWy6s5dMkzhpJNv5Ym5rYQ3CXp9tOYnohoreQ1l9kk7YhrS9GEVOEzA50f0mzHm3f0o7L07oRb40Kkp8X5EntmkEZrOKZLbRzTe9S0jv6RH7P6jzuPjBeUHL3QFcV2fe09tJSSuSbXQSNsN8ASXlIi4jia_DBq31PyP--xdyiR0PfNFVIdM9vp_7Yo9hYv47o8GTCg07FW-4YouK1yRU3oWZRbPYoJvtUJ_-RLGFUX0BIfvMfoPUQOM0xL8xzpMJ6dPJjd__t5rIBbZ6KxqS_Lodu_KG66Yt-qm6XSvovYBnu6TZ9_6BVj2sFSZ3hrZnY5qeZ78eKlVEKei-V13YljPmPUUdymUehr7DX0XdZu15z6C59utzDGvT-WdQrwEFV8tHuTzBfBWaoq1YE_ajXV-aumA3TBSFXAAzL4FolaBVNwwngFk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "client_current_latitude",
+									"value": "9.016148",
+									"type": "text"
+								},
+								{
+									"key": "client_current_longitude",
+									"value": "38.824198",
+									"type": "text"
+								},
+								{
+									"key": "search",
+									"value": "a",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/auth/homecare/search",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"homecare",
+								"search"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ambulance",
+			"item": [
+				{
+					"name": "get_all_ambulance_service",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiY2IzNGVhYTZiZTk0OTRhNWQ1MGUxMDE2ZTEyMGE0ZTVmNjAzNmQ4YzhhN2JiMjA1NTc2YmNmYzVhMGJkM2RkM2MxZDBhOWVmZTI5NjczYmQiLCJpYXQiOjE2NTc1Mjc2MjguMDA4NTc5LCJuYmYiOjE2NTc1Mjc2MjguMDA4NTgyLCJleHAiOjE2ODkwNjM2MjguMDAzODU3LCJzdWIiOiI0MiIsInNjb3BlcyI6W119.WRnW7ZXGClQFznepF5tRj7yq2K2Q0N46nleaLQkDipByCjRdY9W5Kk8jLRBAGpSm5r9fzA7Nc5IfHOlFdDzBaSsPmz1GLrJmEfPdGySihbC3DkABHMuoI1inB_uW0iNhLuhGu_XrJLurTyVxy9GnZlVOgSvMCavrX8T6WZRunjwvIv5MMlFvZtEcvCqCXsxBwLiw-HyoBezgU-ZVYMFV1G3aGuV1KAN-WqkdfTtpU3qT1KsHm7Q-eUzXYWy6s5dMkzhpJNv5Ym5rYQ3CXp9tOYnohoreQ1l9kk7YhrS9GEVOEzA50f0mzHm3f0o7L07oRb40Kkp8X5EntmkEZrOKZLbRzTe9S0jv6RH7P6jzuPjBeUHL3QFcV2fe09tJSSuSbXQSNsN8ASXlIi4jia_DBq31PyP--xdyiR0PfNFVIdM9vp_7Yo9hYv47o8GTCg07FW-4YouK1yRU3oWZRbPYoJvtUJ_-RLGFUX0BIfvMfoPUQOM0xL8xzpMJ6dPJjd__t5rIBbZ6KxqS_Lodu_KG66Yt-qm6XSvovYBnu6TZ9_6BVj2sFSZ3hrZnY5qeZ78eKlVEKei-V13YljPmPUUdymUehr7DX0XdZu15z6C59utzDGvT-WdQrwEFV8tHuTzBfBWaoq1YE_ajXV-aumA3TBSFXAAzL4FolaBVNwwngFk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "client_current_latitude",
+									"value": "9.016148",
+									"type": "text"
+								},
+								{
+									"key": "client_current_longitude",
+									"value": "38.824198",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/auth/ambulance/service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"ambulance",
+								"service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_all_ambulance_service Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiY2IzNGVhYTZiZTk0OTRhNWQ1MGUxMDE2ZTEyMGE0ZTVmNjAzNmQ4YzhhN2JiMjA1NTc2YmNmYzVhMGJkM2RkM2MxZDBhOWVmZTI5NjczYmQiLCJpYXQiOjE2NTc1Mjc2MjguMDA4NTc5LCJuYmYiOjE2NTc1Mjc2MjguMDA4NTgyLCJleHAiOjE2ODkwNjM2MjguMDAzODU3LCJzdWIiOiI0MiIsInNjb3BlcyI6W119.WRnW7ZXGClQFznepF5tRj7yq2K2Q0N46nleaLQkDipByCjRdY9W5Kk8jLRBAGpSm5r9fzA7Nc5IfHOlFdDzBaSsPmz1GLrJmEfPdGySihbC3DkABHMuoI1inB_uW0iNhLuhGu_XrJLurTyVxy9GnZlVOgSvMCavrX8T6WZRunjwvIv5MMlFvZtEcvCqCXsxBwLiw-HyoBezgU-ZVYMFV1G3aGuV1KAN-WqkdfTtpU3qT1KsHm7Q-eUzXYWy6s5dMkzhpJNv5Ym5rYQ3CXp9tOYnohoreQ1l9kk7YhrS9GEVOEzA50f0mzHm3f0o7L07oRb40Kkp8X5EntmkEZrOKZLbRzTe9S0jv6RH7P6jzuPjBeUHL3QFcV2fe09tJSSuSbXQSNsN8ASXlIi4jia_DBq31PyP--xdyiR0PfNFVIdM9vp_7Yo9hYv47o8GTCg07FW-4YouK1yRU3oWZRbPYoJvtUJ_-RLGFUX0BIfvMfoPUQOM0xL8xzpMJ6dPJjd__t5rIBbZ6KxqS_Lodu_KG66Yt-qm6XSvovYBnu6TZ9_6BVj2sFSZ3hrZnY5qeZ78eKlVEKei-V13YljPmPUUdymUehr7DX0XdZu15z6C59utzDGvT-WdQrwEFV8tHuTzBfBWaoq1YE_ajXV-aumA3TBSFXAAzL4FolaBVNwwngFk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "client_current_latitude",
+									"value": "9.016148",
+									"type": "text"
+								},
+								{
+									"key": "client_current_longitude",
+									"value": "38.824198",
+									"type": "text"
+								},
+								{
+									"key": "search",
+									"value": "a",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/auth/ambulance/search",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"ambulance",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reserve",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ambulance_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "user_address",
+									"value": "dsdsds sdas",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/auth/ambulance/reserve",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"ambulance",
+								"reserve"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Oxygen Plant",
+			"item": [
+				{
+					"name": "reserve",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "oxygen_plant_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/auth/oxygen-plant/reserve",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"oxygen-plant",
+								"reserve"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_all_oxygen_plant_services",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiY2IzNGVhYTZiZTk0OTRhNWQ1MGUxMDE2ZTEyMGE0ZTVmNjAzNmQ4YzhhN2JiMjA1NTc2YmNmYzVhMGJkM2RkM2MxZDBhOWVmZTI5NjczYmQiLCJpYXQiOjE2NTc1Mjc2MjguMDA4NTc5LCJuYmYiOjE2NTc1Mjc2MjguMDA4NTgyLCJleHAiOjE2ODkwNjM2MjguMDAzODU3LCJzdWIiOiI0MiIsInNjb3BlcyI6W119.WRnW7ZXGClQFznepF5tRj7yq2K2Q0N46nleaLQkDipByCjRdY9W5Kk8jLRBAGpSm5r9fzA7Nc5IfHOlFdDzBaSsPmz1GLrJmEfPdGySihbC3DkABHMuoI1inB_uW0iNhLuhGu_XrJLurTyVxy9GnZlVOgSvMCavrX8T6WZRunjwvIv5MMlFvZtEcvCqCXsxBwLiw-HyoBezgU-ZVYMFV1G3aGuV1KAN-WqkdfTtpU3qT1KsHm7Q-eUzXYWy6s5dMkzhpJNv5Ym5rYQ3CXp9tOYnohoreQ1l9kk7YhrS9GEVOEzA50f0mzHm3f0o7L07oRb40Kkp8X5EntmkEZrOKZLbRzTe9S0jv6RH7P6jzuPjBeUHL3QFcV2fe09tJSSuSbXQSNsN8ASXlIi4jia_DBq31PyP--xdyiR0PfNFVIdM9vp_7Yo9hYv47o8GTCg07FW-4YouK1yRU3oWZRbPYoJvtUJ_-RLGFUX0BIfvMfoPUQOM0xL8xzpMJ6dPJjd__t5rIBbZ6KxqS_Lodu_KG66Yt-qm6XSvovYBnu6TZ9_6BVj2sFSZ3hrZnY5qeZ78eKlVEKei-V13YljPmPUUdymUehr7DX0XdZu15z6C59utzDGvT-WdQrwEFV8tHuTzBfBWaoq1YE_ajXV-aumA3TBSFXAAzL4FolaBVNwwngFk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "client_current_latitude",
+									"value": "9.016148",
+									"type": "text"
+								},
+								{
+									"key": "client_current_longitude",
+									"value": "38.824198",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/auth/oxygen-implant/service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"oxygen-implant",
+								"service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search_oxygen_plant_services",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNWRjZmQzMjJmMTQ2ZTgwOWFkZGJkMjU5MDZiOGZjNjMyYzkxYzA1NjIyNDMxZmMyNmNiNGNjOTRhYTNlN2U4Y2Y1MWIzYWI2MDY3NDUzOWEiLCJpYXQiOjE2NTgzMDY4MDMuMzYzODIyOTM3MDExNzE4NzUsIm5iZiI6MTY1ODMwNjgwMy4zNjM4MjY5OTAxMjc1NjM0NzY1NjI1LCJleHAiOjE2ODk4NDI4MDMuMzYxMDgzMDMwNzAwNjgzNTkzNzUsInN1YiI6IjQyIiwic2NvcGVzIjpbXX0.Ze0AuLeBMODWJMyLPPM7KXAXSf-ViBqb79Ae-ZTnLV5uEr9M0znGX-itl3raK73FeSa98b0tSyqe0gA7Lv1cChR8BS8GpTTAYfsVvrdxgXl-jm3zyxDt_BfZ4r9dl17AQryz2-Bm-zhE1Ic8bsmJ00rHm1-CUSXtxcWUMJ_UqUl2wGioBtI1DOVHov7p91dxZSmu66GvyWagDItWs8tUyFwb61jgbaUGfIjgq96etRaIcqt5kFY21upJvHS_t9SjIyj9PwCKl-D_oini31kq49-_jbXWHf7G860W1e8WcjNeOhAHKt5uRapOe5oLGNF5lb4JkyjhIKEngJpllYm6OljUzoh7CheaQ6h_ZNlgR-x6cuN6J0bYAhI-u4xOP5BG_DrVq_wP570DKCjtIwAFUxgsTTmTGw7SY_s3Ny1s_fdLWuB5BaCdRKyhdDS6RamNkY1HiXbTkJnVVexXbOEcmw2kL_ZxQDJ4KWDXKQGZOtBqRMUOsD2tBJQCrmc3LwphpkRJjYR76YvGdlP5hiOVstfVgaCZA7tWXosIoX12u5uMmWMTp7tvhCQ0Zl6QGiUNXltWIthBS079ZE5TU4He4XBWcvXsQzh_NXWT6W-x-ibrfO6u0YDt_xDO51ZhF2sw42GuYGd2Vxmttb6dVMcZgWPKFjeXnr8DPfV7c-xANyQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "client_current_latitude",
+									"value": "9.016148",
+									"type": "text"
+								},
+								{
+									"key": "client_current_longitude",
+									"value": "38.824198",
+									"type": "text"
+								},
+								{
+									"key": "search",
+									"value": "a",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.tenawo.com/auth/oxygen-implant/search",
+							"protocol": "https",
+							"host": [
+								"www",
+								"tenawo",
+								"com"
+							],
+							"path": [
+								"auth",
+								"oxygen-implant",
+								"search"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Medical Tourism",
+			"item": [
+				{
+					"name": "reserve",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "medical_tourism_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/auth/medical-tourism/reserve",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"medical-tourism",
+								"reserve"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_all_medical_tourism_services",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{dev}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "client_current_latitude",
+									"value": "9.016148",
+									"type": "text"
+								},
+								{
+									"key": "client_current_longitude",
+									"value": "38.824198",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{dev}}medical-tourism/service",
+							"host": [
+								"{{dev}}medical-tourism"
+							],
+							"path": [
+								"service"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search_medical_tourism_services",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiY2IzNGVhYTZiZTk0OTRhNWQ1MGUxMDE2ZTEyMGE0ZTVmNjAzNmQ4YzhhN2JiMjA1NTc2YmNmYzVhMGJkM2RkM2MxZDBhOWVmZTI5NjczYmQiLCJpYXQiOjE2NTc1Mjc2MjguMDA4NTc5LCJuYmYiOjE2NTc1Mjc2MjguMDA4NTgyLCJleHAiOjE2ODkwNjM2MjguMDAzODU3LCJzdWIiOiI0MiIsInNjb3BlcyI6W119.WRnW7ZXGClQFznepF5tRj7yq2K2Q0N46nleaLQkDipByCjRdY9W5Kk8jLRBAGpSm5r9fzA7Nc5IfHOlFdDzBaSsPmz1GLrJmEfPdGySihbC3DkABHMuoI1inB_uW0iNhLuhGu_XrJLurTyVxy9GnZlVOgSvMCavrX8T6WZRunjwvIv5MMlFvZtEcvCqCXsxBwLiw-HyoBezgU-ZVYMFV1G3aGuV1KAN-WqkdfTtpU3qT1KsHm7Q-eUzXYWy6s5dMkzhpJNv5Ym5rYQ3CXp9tOYnohoreQ1l9kk7YhrS9GEVOEzA50f0mzHm3f0o7L07oRb40Kkp8X5EntmkEZrOKZLbRzTe9S0jv6RH7P6jzuPjBeUHL3QFcV2fe09tJSSuSbXQSNsN8ASXlIi4jia_DBq31PyP--xdyiR0PfNFVIdM9vp_7Yo9hYv47o8GTCg07FW-4YouK1yRU3oWZRbPYoJvtUJ_-RLGFUX0BIfvMfoPUQOM0xL8xzpMJ6dPJjd__t5rIBbZ6KxqS_Lodu_KG66Yt-qm6XSvovYBnu6TZ9_6BVj2sFSZ3hrZnY5qeZ78eKlVEKei-V13YljPmPUUdymUehr7DX0XdZu15z6C59utzDGvT-WdQrwEFV8tHuTzBfBWaoq1YE_ajXV-aumA3TBSFXAAzL4FolaBVNwwngFk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "client_current_latitude",
+									"value": "9.016148",
+									"type": "text"
+								},
+								{
+									"key": "client_current_longitude",
+									"value": "38.824198",
+									"type": "text"
+								},
+								{
+									"key": "search",
+									"value": "a",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/auth/medical-tourism/search",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"medical-tourism",
+								"search"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Agencies / insurances",
+			"item": [
+				{
+					"name": "reserve",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "agencies_insurances_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/auth/agencies-insurances/reserve",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"agencies-insurances",
+								"reserve"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_all_ai_services",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiY2IzNGVhYTZiZTk0OTRhNWQ1MGUxMDE2ZTEyMGE0ZTVmNjAzNmQ4YzhhN2JiMjA1NTc2YmNmYzVhMGJkM2RkM2MxZDBhOWVmZTI5NjczYmQiLCJpYXQiOjE2NTc1Mjc2MjguMDA4NTc5LCJuYmYiOjE2NTc1Mjc2MjguMDA4NTgyLCJleHAiOjE2ODkwNjM2MjguMDAzODU3LCJzdWIiOiI0MiIsInNjb3BlcyI6W119.WRnW7ZXGClQFznepF5tRj7yq2K2Q0N46nleaLQkDipByCjRdY9W5Kk8jLRBAGpSm5r9fzA7Nc5IfHOlFdDzBaSsPmz1GLrJmEfPdGySihbC3DkABHMuoI1inB_uW0iNhLuhGu_XrJLurTyVxy9GnZlVOgSvMCavrX8T6WZRunjwvIv5MMlFvZtEcvCqCXsxBwLiw-HyoBezgU-ZVYMFV1G3aGuV1KAN-WqkdfTtpU3qT1KsHm7Q-eUzXYWy6s5dMkzhpJNv5Ym5rYQ3CXp9tOYnohoreQ1l9kk7YhrS9GEVOEzA50f0mzHm3f0o7L07oRb40Kkp8X5EntmkEZrOKZLbRzTe9S0jv6RH7P6jzuPjBeUHL3QFcV2fe09tJSSuSbXQSNsN8ASXlIi4jia_DBq31PyP--xdyiR0PfNFVIdM9vp_7Yo9hYv47o8GTCg07FW-4YouK1yRU3oWZRbPYoJvtUJ_-RLGFUX0BIfvMfoPUQOM0xL8xzpMJ6dPJjd__t5rIBbZ6KxqS_Lodu_KG66Yt-qm6XSvovYBnu6TZ9_6BVj2sFSZ3hrZnY5qeZ78eKlVEKei-V13YljPmPUUdymUehr7DX0XdZu15z6C59utzDGvT-WdQrwEFV8tHuTzBfBWaoq1YE_ajXV-aumA3TBSFXAAzL4FolaBVNwwngFk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "client_current_latitude",
+									"value": "9.016148",
+									"type": "text"
+								},
+								{
+									"key": "client_current_longitude",
+									"value": "38.824198",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/auth/agencies-insurances/service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"agencies-insurances",
+								"service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search_ai_services Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiY2IzNGVhYTZiZTk0OTRhNWQ1MGUxMDE2ZTEyMGE0ZTVmNjAzNmQ4YzhhN2JiMjA1NTc2YmNmYzVhMGJkM2RkM2MxZDBhOWVmZTI5NjczYmQiLCJpYXQiOjE2NTc1Mjc2MjguMDA4NTc5LCJuYmYiOjE2NTc1Mjc2MjguMDA4NTgyLCJleHAiOjE2ODkwNjM2MjguMDAzODU3LCJzdWIiOiI0MiIsInNjb3BlcyI6W119.WRnW7ZXGClQFznepF5tRj7yq2K2Q0N46nleaLQkDipByCjRdY9W5Kk8jLRBAGpSm5r9fzA7Nc5IfHOlFdDzBaSsPmz1GLrJmEfPdGySihbC3DkABHMuoI1inB_uW0iNhLuhGu_XrJLurTyVxy9GnZlVOgSvMCavrX8T6WZRunjwvIv5MMlFvZtEcvCqCXsxBwLiw-HyoBezgU-ZVYMFV1G3aGuV1KAN-WqkdfTtpU3qT1KsHm7Q-eUzXYWy6s5dMkzhpJNv5Ym5rYQ3CXp9tOYnohoreQ1l9kk7YhrS9GEVOEzA50f0mzHm3f0o7L07oRb40Kkp8X5EntmkEZrOKZLbRzTe9S0jv6RH7P6jzuPjBeUHL3QFcV2fe09tJSSuSbXQSNsN8ASXlIi4jia_DBq31PyP--xdyiR0PfNFVIdM9vp_7Yo9hYv47o8GTCg07FW-4YouK1yRU3oWZRbPYoJvtUJ_-RLGFUX0BIfvMfoPUQOM0xL8xzpMJ6dPJjd__t5rIBbZ6KxqS_Lodu_KG66Yt-qm6XSvovYBnu6TZ9_6BVj2sFSZ3hrZnY5qeZ78eKlVEKei-V13YljPmPUUdymUehr7DX0XdZu15z6C59utzDGvT-WdQrwEFV8tHuTzBfBWaoq1YE_ajXV-aumA3TBSFXAAzL4FolaBVNwwngFk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "client_current_latitude",
+									"value": "9.016148",
+									"type": "text"
+								},
+								{
+									"key": "client_current_longitude",
+									"value": "38.824198",
+									"type": "text"
+								},
+								{
+									"key": "search",
+									"value": "a",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/auth/agencies-insurances/search",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"agencies-insurances",
+								"search"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Drug",
+			"item": [
+				{
+					"name": "Search",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiZTBmYmIxOTdiZTMzODRhZTEwMzFiMGU2ODczOGM1NDhkM2U1NjFhYTQxZTdiOWUwODY2OTgyM2QxNTQwMmQ1ZTJiZTdiNGI2MDJhNzZmY2QiLCJpYXQiOjE2NTcwMDU2MDIuMjg1MzE5LCJuYmYiOjE2NTcwMDU2MDIuMjg1MzIxLCJleHAiOjE2ODg1NDE2MDIuMjY1MDY4LCJzdWIiOiI0MiIsInNjb3BlcyI6W119.X9HujSZZc0mHmu6OCvEqgMAgHc0QUJ9iwUJnYCjrSG25WwJen-JXxo5XCRmLdkkTq1shDSTuoQUsIziH89bPFWmpgmngd-EHIoj-7QDTyALbS3OKeE6cGnyuBpGz1BFTJVpe9QxSxvYXXTiaIT1j4AtwmAgOTah34DhMtz3ld7NIuu9srh_do9_ExQP4miUTID1C4eRk-wzH1u2tCxfMrlBa2HJ2qC_wqOtGk7MfnhFlZcOrMVWeAN46Qu6Zguel4ET3OoWwRoVfhPCISt9U2xgCqIaZTdi5N3Y_MLHz_RpKCW5fz0xPy6jtDSaGUCAtVp6I1HhfXGyDp34LMG24dIKY3RSwk_jstBXufiklBvQ5W3fv5Cu0cwQHq7qMF_qc5Cca7Zc-DFDmjZ0Dw0Y3VKMUwNh7kOh4xHA6UNpJ7477SNZrAiRoaw8YSmTUJOttYg5wtug6-gbMTeQJg94dJWBJqEfZPAqq3b-vFefgasAtHovbZq35S1GAFggO5OuQiVAEzCpRcrX1nKEhCnB0B5aPVfZ2OoOFOz2XOiKuICv2X7JALjW3v_0KJuRppQHEZVaYEHZocD7LDXq595JDK9-AGmnEK4AWG_nPxmGoxfvAqNYfosMHaVyqpPldgBUD_Rk9-6pV27SsmoUycKb0SV_U5JQCcTn84MSu6kwTMI8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "client_current_latitude",
+									"value": "9.016148",
+									"type": "text"
+								},
+								{
+									"key": "client_current_longitude",
+									"value": "38.824198",
+									"type": "text"
+								},
+								{
+									"key": "search",
+									"value": "ama",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/auth/drug/search",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"drug",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reserve",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "prescription",
+									"type": "file",
+									"src": "/Users/aman/Downloads/Asset 3.jpg"
+								},
+								{
+									"key": "institution",
+									"value": "Tikur Anbesa Hospiteal",
+									"type": "text"
+								},
+								{
+									"key": "doctor",
+									"value": "Amanuel",
+									"type": "text"
+								},
+								{
+									"key": "drug_id",
+									"value": "23",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{dev}}drug/order",
+							"host": [
+								"{{dev}}drug"
+							],
+							"path": [
+								"order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "all_drugs",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "client_current_latitude",
+									"value": "8.9480144",
+									"type": "text"
+								},
+								{
+									"key": "client_current_longitude",
+									"value": "38.7486243",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{dev}}vendor/drugs",
+							"host": [
+								"{{dev}}vendor"
+							],
+							"path": [
+								"drugs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "drugs by category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "client_current_latitude",
+									"value": "9.016148",
+									"type": "text"
+								},
+								{
+									"key": "client_current_longitude",
+									"value": "38.824198",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{dev}}drugs/1",
+							"host": [
+								"{{dev}}drugs"
+							],
+							"path": [
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "categories",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dev}}drugs/categories",
+							"host": [
+								"{{dev}}drugs"
+							],
+							"path": [
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "drug by category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{dev}}drugs/1",
+							"host": [
+								"{{dev}}drugs"
+							],
+							"path": [
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Transaction",
+			"item": [
+				{
+					"name": "Local COOP Retrive",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/auth/transaction/coop",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"transaction",
+								"coop"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Local Awash Retrive",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/auth/transaction/awash",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"transaction",
+								"awash"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Server COOP Retrive",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://www.tenawo.com/auth/transaction/coop",
+							"protocol": "https",
+							"host": [
+								"www",
+								"tenawo",
+								"com"
+							],
+							"path": [
+								"auth",
+								"transaction",
+								"coop"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Server Awash Retrive",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://www.tenawo.com/auth/transaction/awash",
+							"protocol": "https",
+							"host": [
+								"www",
+								"tenawo",
+								"com"
+							],
+							"path": [
+								"auth",
+								"transaction",
+								"awash"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Change password",
+			"item": [
+				{
+					"name": "change password",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTRkYTBmZWIxNGQ0YWQ4MjQwNDE3MjJjZDQ4NDRkYzQ4YWU3Yjk0MWMzNTRlNmEzMzQ4MmI3Y2E3OGYyNjQxYjA4ZmEzYWQ1YjJhZjAxZjciLCJpYXQiOjE2NDM3ODMyNDYuNTk4OTU2LCJuYmYiOjE2NDM3ODMyNDYuNTk4OTY2LCJleHAiOjE2NzUzMTkyNDUuNTY5NjE1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.BSdmFfGz3YLmmnNSGae2-OFqOvxMsfCvRU1x4xcDsp87o0WFmdc2GUAKNNS_2hMc99a12AONvHIw-NkvKufLT4Oam5nOqQyIFqgRG6Ts1lPbHhCNMfq5Xm_3HHMADPR6SKYagW6nkMj5WU_32Qo9m25S_HjCWyr5wVv3LCDWWb4qeVFH-2w7qQjXWvWX1inW1VRPh-Q_4qlBKVCDn0we3MOTlJbW2gR-KQX009PvPbnVnK7peUOsVB8gcp_RXJG7ubd4DLNboZnvujjwFdFKcwr_gYnPTq9j1ADDT2Hl-4Ih4XIvmywX-QGfpQaAS7yY_7kOA9IHbN1GgPV9ilt5_4bswrdgRsd1nwyrf--qxbpaLwO-RAt0AuUhoVBYc5anrU86xI3NXANBh6PTnM6EiC8LD6IHTZ6TvY0tFqemoTJspfV6r0Y1VkWrGEA0HudzU5z6XtZ0uZgB-ouN1I5ApX93FF7vJoIsmfxdGnan60Q_WLvOazcL0LxIBeVvYembxw0OTz4E6BZY-2j6pV1u1wvjb2qrjr2VQ3xfIjNo3xyiTJtfMHoHChJB4fyUg3iTj4xCeD9W1qCP34Jp1zWMqxzGdAY5syUbUR1WjDibn4gJEatXLY_qLvM2isuyHtpskrrYzhXJzcAXPGAVTQOrsz1L4ylD37lomQk2hb4M3DI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTRkYTBmZWIxNGQ0YWQ4MjQwNDE3MjJjZDQ4NDRkYzQ4YWU3Yjk0MWMzNTRlNmEzMzQ4MmI3Y2E3OGYyNjQxYjA4ZmEzYWQ1YjJhZjAxZjciLCJpYXQiOjE2NDM3ODMyNDYuNTk4OTU2LCJuYmYiOjE2NDM3ODMyNDYuNTk4OTY2LCJleHAiOjE2NzUzMTkyNDUuNTY5NjE1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.BSdmFfGz3YLmmnNSGae2-OFqOvxMsfCvRU1x4xcDsp87o0WFmdc2GUAKNNS_2hMc99a12AONvHIw-NkvKufLT4Oam5nOqQyIFqgRG6Ts1lPbHhCNMfq5Xm_3HHMADPR6SKYagW6nkMj5WU_32Qo9m25S_HjCWyr5wVv3LCDWWb4qeVFH-2w7qQjXWvWX1inW1VRPh-Q_4qlBKVCDn0we3MOTlJbW2gR-KQX009PvPbnVnK7peUOsVB8gcp_RXJG7ubd4DLNboZnvujjwFdFKcwr_gYnPTq9j1ADDT2Hl-4Ih4XIvmywX-QGfpQaAS7yY_7kOA9IHbN1GgPV9ilt5_4bswrdgRsd1nwyrf--qxbpaLwO-RAt0AuUhoVBYc5anrU86xI3NXANBh6PTnM6EiC8LD6IHTZ6TvY0tFqemoTJspfV6r0Y1VkWrGEA0HudzU5z6XtZ0uZgB-ouN1I5ApX93FF7vJoIsmfxdGnan60Q_WLvOazcL0LxIBeVvYembxw0OTz4E6BZY-2j6pV1u1wvjb2qrjr2VQ3xfIjNo3xyiTJtfMHoHChJB4fyUg3iTj4xCeD9W1qCP34Jp1zWMqxzGdAY5syUbUR1WjDibn4gJEatXLY_qLvM2isuyHtpskrrYzhXJzcAXPGAVTQOrsz1L4ylD37lomQk2hb4M3DI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "current_password",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "new_password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "new_confirm_password",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/auth/change/password",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"change",
+								"password"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Hospital",
+			"item": [
+				{
+					"name": "get_all_hospital_service",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "client_current_latitude",
+								"value": "9.016148",
+								"type": "text"
+							},
+							{
+								"key": "client_current_longitude",
+								"value": "38.824198",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "client_current_latitude",
+									"value": "9.016148",
+									"type": "text"
+								},
+								{
+									"key": "client_current_longitude",
+									"value": "38.824198",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{dev}}hospital/services",
+							"host": [
+								"{{dev}}hospital"
+							],
+							"path": [
+								"services"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search_hospital_service",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiY2IzNGVhYTZiZTk0OTRhNWQ1MGUxMDE2ZTEyMGE0ZTVmNjAzNmQ4YzhhN2JiMjA1NTc2YmNmYzVhMGJkM2RkM2MxZDBhOWVmZTI5NjczYmQiLCJpYXQiOjE2NTc1Mjc2MjguMDA4NTc5LCJuYmYiOjE2NTc1Mjc2MjguMDA4NTgyLCJleHAiOjE2ODkwNjM2MjguMDAzODU3LCJzdWIiOiI0MiIsInNjb3BlcyI6W119.WRnW7ZXGClQFznepF5tRj7yq2K2Q0N46nleaLQkDipByCjRdY9W5Kk8jLRBAGpSm5r9fzA7Nc5IfHOlFdDzBaSsPmz1GLrJmEfPdGySihbC3DkABHMuoI1inB_uW0iNhLuhGu_XrJLurTyVxy9GnZlVOgSvMCavrX8T6WZRunjwvIv5MMlFvZtEcvCqCXsxBwLiw-HyoBezgU-ZVYMFV1G3aGuV1KAN-WqkdfTtpU3qT1KsHm7Q-eUzXYWy6s5dMkzhpJNv5Ym5rYQ3CXp9tOYnohoreQ1l9kk7YhrS9GEVOEzA50f0mzHm3f0o7L07oRb40Kkp8X5EntmkEZrOKZLbRzTe9S0jv6RH7P6jzuPjBeUHL3QFcV2fe09tJSSuSbXQSNsN8ASXlIi4jia_DBq31PyP--xdyiR0PfNFVIdM9vp_7Yo9hYv47o8GTCg07FW-4YouK1yRU3oWZRbPYoJvtUJ_-RLGFUX0BIfvMfoPUQOM0xL8xzpMJ6dPJjd__t5rIBbZ6KxqS_Lodu_KG66Yt-qm6XSvovYBnu6TZ9_6BVj2sFSZ3hrZnY5qeZ78eKlVEKei-V13YljPmPUUdymUehr7DX0XdZu15z6C59utzDGvT-WdQrwEFV8tHuTzBfBWaoq1YE_ajXV-aumA3TBSFXAAzL4FolaBVNwwngFk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "client_current_latitude",
+								"value": "9.016148",
+								"type": "text"
+							},
+							{
+								"key": "client_current_longitude",
+								"value": "38.824198",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "client_current_latitude",
+									"value": "9.016148",
+									"type": "text"
+								},
+								{
+									"key": "client_current_longitude",
+									"value": "38.824198",
+									"type": "text"
+								},
+								{
+									"key": "search",
+									"value": "ambhj",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/auth/hospital/search",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"hospital",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reserve",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "hospital_id",
+									"value": "19",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{dev}}hospital/reserve",
+							"host": [
+								"{{dev}}hospital"
+							],
+							"path": [
+								"reserve"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Clinic",
+			"item": [
+				{
+					"name": "reserve",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "clinic_id",
+									"value": "19",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{dev}}clinic/reserve",
+							"host": [
+								"{{dev}}clinic"
+							],
+							"path": [
+								"reserve"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_all_clinic_service",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiY2IzNGVhYTZiZTk0OTRhNWQ1MGUxMDE2ZTEyMGE0ZTVmNjAzNmQ4YzhhN2JiMjA1NTc2YmNmYzVhMGJkM2RkM2MxZDBhOWVmZTI5NjczYmQiLCJpYXQiOjE2NTc1Mjc2MjguMDA4NTc5LCJuYmYiOjE2NTc1Mjc2MjguMDA4NTgyLCJleHAiOjE2ODkwNjM2MjguMDAzODU3LCJzdWIiOiI0MiIsInNjb3BlcyI6W119.WRnW7ZXGClQFznepF5tRj7yq2K2Q0N46nleaLQkDipByCjRdY9W5Kk8jLRBAGpSm5r9fzA7Nc5IfHOlFdDzBaSsPmz1GLrJmEfPdGySihbC3DkABHMuoI1inB_uW0iNhLuhGu_XrJLurTyVxy9GnZlVOgSvMCavrX8T6WZRunjwvIv5MMlFvZtEcvCqCXsxBwLiw-HyoBezgU-ZVYMFV1G3aGuV1KAN-WqkdfTtpU3qT1KsHm7Q-eUzXYWy6s5dMkzhpJNv5Ym5rYQ3CXp9tOYnohoreQ1l9kk7YhrS9GEVOEzA50f0mzHm3f0o7L07oRb40Kkp8X5EntmkEZrOKZLbRzTe9S0jv6RH7P6jzuPjBeUHL3QFcV2fe09tJSSuSbXQSNsN8ASXlIi4jia_DBq31PyP--xdyiR0PfNFVIdM9vp_7Yo9hYv47o8GTCg07FW-4YouK1yRU3oWZRbPYoJvtUJ_-RLGFUX0BIfvMfoPUQOM0xL8xzpMJ6dPJjd__t5rIBbZ6KxqS_Lodu_KG66Yt-qm6XSvovYBnu6TZ9_6BVj2sFSZ3hrZnY5qeZ78eKlVEKei-V13YljPmPUUdymUehr7DX0XdZu15z6C59utzDGvT-WdQrwEFV8tHuTzBfBWaoq1YE_ajXV-aumA3TBSFXAAzL4FolaBVNwwngFk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "client_current_latitude",
+									"value": "9.016148",
+									"type": "text"
+								},
+								{
+									"key": "client_current_longitude",
+									"value": "38.824198",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/auth/clinic/services",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"clinic",
+								"services"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search_clinic_service",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "client_current_latitude",
+									"value": "9.016148",
+									"type": "text"
+								},
+								{
+									"key": "client_current_longitude",
+									"value": "38.824198",
+									"type": "text"
+								},
+								{
+									"key": "search",
+									"value": "a",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{dev}}client/clinic/search?client_current_latitude=9.016148&client_current_longitude=38.824198&search=tfsdfd",
+							"host": [
+								"{{dev}}client"
+							],
+							"path": [
+								"clinic",
+								"search"
+							],
+							"query": [
+								{
+									"key": "client_current_latitude",
+									"value": "9.016148"
+								},
+								{
+									"key": "client_current_longitude",
+									"value": "38.824198"
+								},
+								{
+									"key": "search",
+									"value": "tfsdfd"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Laboratory",
+			"item": [
+				{
+					"name": "get_all_laboratory_service",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiY2IzNGVhYTZiZTk0OTRhNWQ1MGUxMDE2ZTEyMGE0ZTVmNjAzNmQ4YzhhN2JiMjA1NTc2YmNmYzVhMGJkM2RkM2MxZDBhOWVmZTI5NjczYmQiLCJpYXQiOjE2NTc1Mjc2MjguMDA4NTc5LCJuYmYiOjE2NTc1Mjc2MjguMDA4NTgyLCJleHAiOjE2ODkwNjM2MjguMDAzODU3LCJzdWIiOiI0MiIsInNjb3BlcyI6W119.WRnW7ZXGClQFznepF5tRj7yq2K2Q0N46nleaLQkDipByCjRdY9W5Kk8jLRBAGpSm5r9fzA7Nc5IfHOlFdDzBaSsPmz1GLrJmEfPdGySihbC3DkABHMuoI1inB_uW0iNhLuhGu_XrJLurTyVxy9GnZlVOgSvMCavrX8T6WZRunjwvIv5MMlFvZtEcvCqCXsxBwLiw-HyoBezgU-ZVYMFV1G3aGuV1KAN-WqkdfTtpU3qT1KsHm7Q-eUzXYWy6s5dMkzhpJNv5Ym5rYQ3CXp9tOYnohoreQ1l9kk7YhrS9GEVOEzA50f0mzHm3f0o7L07oRb40Kkp8X5EntmkEZrOKZLbRzTe9S0jv6RH7P6jzuPjBeUHL3QFcV2fe09tJSSuSbXQSNsN8ASXlIi4jia_DBq31PyP--xdyiR0PfNFVIdM9vp_7Yo9hYv47o8GTCg07FW-4YouK1yRU3oWZRbPYoJvtUJ_-RLGFUX0BIfvMfoPUQOM0xL8xzpMJ6dPJjd__t5rIBbZ6KxqS_Lodu_KG66Yt-qm6XSvovYBnu6TZ9_6BVj2sFSZ3hrZnY5qeZ78eKlVEKei-V13YljPmPUUdymUehr7DX0XdZu15z6C59utzDGvT-WdQrwEFV8tHuTzBfBWaoq1YE_ajXV-aumA3TBSFXAAzL4FolaBVNwwngFk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "client_current_latitude",
+									"value": "9.016148",
+									"type": "text"
+								},
+								{
+									"key": "client_current_longitude",
+									"value": "38.824198",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/auth/labratory/tests",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"labratory",
+								"tests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search_laboratory_service Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiY2IzNGVhYTZiZTk0OTRhNWQ1MGUxMDE2ZTEyMGE0ZTVmNjAzNmQ4YzhhN2JiMjA1NTc2YmNmYzVhMGJkM2RkM2MxZDBhOWVmZTI5NjczYmQiLCJpYXQiOjE2NTc1Mjc2MjguMDA4NTc5LCJuYmYiOjE2NTc1Mjc2MjguMDA4NTgyLCJleHAiOjE2ODkwNjM2MjguMDAzODU3LCJzdWIiOiI0MiIsInNjb3BlcyI6W119.WRnW7ZXGClQFznepF5tRj7yq2K2Q0N46nleaLQkDipByCjRdY9W5Kk8jLRBAGpSm5r9fzA7Nc5IfHOlFdDzBaSsPmz1GLrJmEfPdGySihbC3DkABHMuoI1inB_uW0iNhLuhGu_XrJLurTyVxy9GnZlVOgSvMCavrX8T6WZRunjwvIv5MMlFvZtEcvCqCXsxBwLiw-HyoBezgU-ZVYMFV1G3aGuV1KAN-WqkdfTtpU3qT1KsHm7Q-eUzXYWy6s5dMkzhpJNv5Ym5rYQ3CXp9tOYnohoreQ1l9kk7YhrS9GEVOEzA50f0mzHm3f0o7L07oRb40Kkp8X5EntmkEZrOKZLbRzTe9S0jv6RH7P6jzuPjBeUHL3QFcV2fe09tJSSuSbXQSNsN8ASXlIi4jia_DBq31PyP--xdyiR0PfNFVIdM9vp_7Yo9hYv47o8GTCg07FW-4YouK1yRU3oWZRbPYoJvtUJ_-RLGFUX0BIfvMfoPUQOM0xL8xzpMJ6dPJjd__t5rIBbZ6KxqS_Lodu_KG66Yt-qm6XSvovYBnu6TZ9_6BVj2sFSZ3hrZnY5qeZ78eKlVEKei-V13YljPmPUUdymUehr7DX0XdZu15z6C59utzDGvT-WdQrwEFV8tHuTzBfBWaoq1YE_ajXV-aumA3TBSFXAAzL4FolaBVNwwngFk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "client_current_latitude",
+									"value": "9.016148",
+									"type": "text"
+								},
+								{
+									"key": "client_current_longitude",
+									"value": "38.824198",
+									"type": "text"
+								},
+								{
+									"key": "search",
+									"value": "a",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/auth/labratory/search",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"labratory",
+								"search"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Diagnostic Image",
+			"item": [
+				{
+					"name": "get_all_diagnostic_services",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiY2IzNGVhYTZiZTk0OTRhNWQ1MGUxMDE2ZTEyMGE0ZTVmNjAzNmQ4YzhhN2JiMjA1NTc2YmNmYzVhMGJkM2RkM2MxZDBhOWVmZTI5NjczYmQiLCJpYXQiOjE2NTc1Mjc2MjguMDA4NTc5LCJuYmYiOjE2NTc1Mjc2MjguMDA4NTgyLCJleHAiOjE2ODkwNjM2MjguMDAzODU3LCJzdWIiOiI0MiIsInNjb3BlcyI6W119.WRnW7ZXGClQFznepF5tRj7yq2K2Q0N46nleaLQkDipByCjRdY9W5Kk8jLRBAGpSm5r9fzA7Nc5IfHOlFdDzBaSsPmz1GLrJmEfPdGySihbC3DkABHMuoI1inB_uW0iNhLuhGu_XrJLurTyVxy9GnZlVOgSvMCavrX8T6WZRunjwvIv5MMlFvZtEcvCqCXsxBwLiw-HyoBezgU-ZVYMFV1G3aGuV1KAN-WqkdfTtpU3qT1KsHm7Q-eUzXYWy6s5dMkzhpJNv5Ym5rYQ3CXp9tOYnohoreQ1l9kk7YhrS9GEVOEzA50f0mzHm3f0o7L07oRb40Kkp8X5EntmkEZrOKZLbRzTe9S0jv6RH7P6jzuPjBeUHL3QFcV2fe09tJSSuSbXQSNsN8ASXlIi4jia_DBq31PyP--xdyiR0PfNFVIdM9vp_7Yo9hYv47o8GTCg07FW-4YouK1yRU3oWZRbPYoJvtUJ_-RLGFUX0BIfvMfoPUQOM0xL8xzpMJ6dPJjd__t5rIBbZ6KxqS_Lodu_KG66Yt-qm6XSvovYBnu6TZ9_6BVj2sFSZ3hrZnY5qeZ78eKlVEKei-V13YljPmPUUdymUehr7DX0XdZu15z6C59utzDGvT-WdQrwEFV8tHuTzBfBWaoq1YE_ajXV-aumA3TBSFXAAzL4FolaBVNwwngFk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "client_current_latitude",
+									"value": "9.016148",
+									"type": "text"
+								},
+								{
+									"key": "client_current_longitude",
+									"value": "38.824198",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/auth/diagnostic-images/imagining",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"diagnostic-images",
+								"imagining"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search_diagnostic_services Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiY2IzNGVhYTZiZTk0OTRhNWQ1MGUxMDE2ZTEyMGE0ZTVmNjAzNmQ4YzhhN2JiMjA1NTc2YmNmYzVhMGJkM2RkM2MxZDBhOWVmZTI5NjczYmQiLCJpYXQiOjE2NTc1Mjc2MjguMDA4NTc5LCJuYmYiOjE2NTc1Mjc2MjguMDA4NTgyLCJleHAiOjE2ODkwNjM2MjguMDAzODU3LCJzdWIiOiI0MiIsInNjb3BlcyI6W119.WRnW7ZXGClQFznepF5tRj7yq2K2Q0N46nleaLQkDipByCjRdY9W5Kk8jLRBAGpSm5r9fzA7Nc5IfHOlFdDzBaSsPmz1GLrJmEfPdGySihbC3DkABHMuoI1inB_uW0iNhLuhGu_XrJLurTyVxy9GnZlVOgSvMCavrX8T6WZRunjwvIv5MMlFvZtEcvCqCXsxBwLiw-HyoBezgU-ZVYMFV1G3aGuV1KAN-WqkdfTtpU3qT1KsHm7Q-eUzXYWy6s5dMkzhpJNv5Ym5rYQ3CXp9tOYnohoreQ1l9kk7YhrS9GEVOEzA50f0mzHm3f0o7L07oRb40Kkp8X5EntmkEZrOKZLbRzTe9S0jv6RH7P6jzuPjBeUHL3QFcV2fe09tJSSuSbXQSNsN8ASXlIi4jia_DBq31PyP--xdyiR0PfNFVIdM9vp_7Yo9hYv47o8GTCg07FW-4YouK1yRU3oWZRbPYoJvtUJ_-RLGFUX0BIfvMfoPUQOM0xL8xzpMJ6dPJjd__t5rIBbZ6KxqS_Lodu_KG66Yt-qm6XSvovYBnu6TZ9_6BVj2sFSZ3hrZnY5qeZ78eKlVEKei-V13YljPmPUUdymUehr7DX0XdZu15z6C59utzDGvT-WdQrwEFV8tHuTzBfBWaoq1YE_ajXV-aumA3TBSFXAAzL4FolaBVNwwngFk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "client_current_latitude",
+									"value": "9.016148",
+									"type": "text"
+								},
+								{
+									"key": "client_current_longitude",
+									"value": "38.824198",
+									"type": "text"
+								},
+								{
+									"key": "search",
+									"value": "a\n",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/auth/diagnostic-images/search",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"diagnostic-images",
+								"search"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Change profile image",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZDRhNDdmMmI4NGY5NDk3OGMzZjE1NGFiZDkzOTQwMjE1YzgxOTAzNTk1ODhkYWZmMTExYTU3NWU5MWRiNGJmODNhMDNjMGQ1YzVkZWIxMGQiLCJpYXQiOjE2NDUyNTE0NzYuNDIyNzk1LCJuYmYiOjE2NDUyNTE0NzYuNDIyODAzLCJleHAiOjE2NzY3ODc0NzUuNjk2OTIsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.BEGPuA5bdCcC-z1_IECm8gLNZqnyWd0HupAp0EtSy2pU6gEyvAIMBLIAH1JKfPauPlMwz8dMYTPvhL6euJ4Gvigmw3r2qtB_P6ejh5onb6rRJsLsyycSzJozNNRQ4WiBSY5QOJMYh0gudAyfjsgkly2rpuWHus9N1s8Kg32qee6DDaaPYQK3xdixGRXQDZl-8ZdSOPSJ3sPicc8B7JTwMn-hftDltNG0CMo8mJrdlSk0NJOD7GZTzIw5EgBYEacAS_w0s7TQK0J5ga1LYKxILSjJoQS1EBSX-t8yIXNP6ifPu2JgW1qfOusFeA84EKMmcgoL5nVWl3IZwTNF9DAQCOsTtc6l22o8bvIxunbl6soO-PjuTqhGtkEWllM4mNT5XE2gQUsMDKVJN9aYBK2X2OXlAOpi7SqccjNpcZmxLy1oN9o4F6fSp2W-A1MISNhQqUSm4bfO3LvbxzmbZTFFAub0xdLw4QTlgUI-EeU74jxxxhTHZWZNoeAg7jwSKRu-eR505b3nkIMox7n2eHAiCG16TzEfZ1h5mDtdMabR6N26KB2CqS6eU1KVZXrxLJbIWG4xIAj1b8ugJ3LtPOBkLWLsaZADAT9Iu5nAalL8nWXp7tVNHA4N_mqC1hnq2YVMrUOfFsFUn-Hmc3UozCMTuw6FedIEpWL_11IWoI4Lnd4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "/C:/Users/AmanD/Downloads/Tenawo logo Final-01.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/auth/change/profile/image",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"auth",
+						"change",
+						"profile",
+						"image"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete auth user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/auth/delete/account",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"auth",
+						"delete",
+						"account"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNjE5ZDlkZTI2ZmE1NTE4MDZjMGMzNDU4ZWU1Y2MwNzQxNTdhNTcwN2U1ZWU5N2ZhODFmOWYwZDAyNThmZWEyZjNmOTFhODQwYmE3ZGI1NzkiLCJpYXQiOjE2NDAwODkwMTYuOTUwNDc5LCJuYmYiOjE2NDAwODkwMTYuOTUwNDg3LCJleHAiOjE2NzE2MjUwMTYuODg5NTE4LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.tjdCpmRgTVe4kiKf8CDO77kzzqUByJDCfvDFSYoScjNYRVXAKtLrNE87PNv6UlsOf2thNonWfbbrPBhPJKvdgE3K77WrisUdsEWlRZWDZVlggGkK2v_KvxHWo3jrBLFy7F7nY8WzTfEsBEOVbL0tYh4HiNqDNuMns3ApXn8P9b_1e6C7OgIxB7BaU3HLuR1NAkDdb7d1G5jq5aVfB74b71I1yYh0RkWo8jKulLBMGczZVFiqlVaY0HhHr2v5gJP2L8c6kz0wHM13kf_4A08Wn-EreG-PAk8snGRlJZOMfsz0e5M5snfQB-AjenLSj9hMMnjWDhgi9BKe1uDdJUeId5PheR9gQrP45t5bu4fgLu9j6pFNxlLCag7FMbKdaDInnxMJO93tGEpwFMyTf5Ptp3G_1qLwDr0MFxsuo5KA02yPM3oj4JxvMYyM78t-h4e9fBsCLZkm6LePMAEtOaecZ5QD-dR0Oy8_c22B2SujyMslgjSEVgapp-RnmuFDMDcjE8YvxL_6Q1v_a-fUQO995aOnQ4kXq2pWOM3UKQMZICux4IXSDIxbQtNvBksbWdqIxVsYxyCiw5irdQSlR3wVJMZkkGzYQAFfgyCd8TvsfZ_B9H36XwQ9YezmXjBsOGTz5UzX52e4snl2yMthp2xcfLQRuR6jnwDjYgumu4p1njY",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
