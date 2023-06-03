@@ -28,7 +28,7 @@ class _PaymentsState extends State<Payments> {
     }
   }
   var _value = "-1";
-  GlobalKey<ScaffoldState> _scaffoldKEy = GlobalKey<ScaffoldState>();
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -286,7 +286,8 @@ class _PaymentsState extends State<Payments> {
                         )
                     ),
 
-                    onPressed: () => pickImage(ImageSource.gallery), child: Text('Done',style: TextStyle(fontSize: 16),)),
+                    onPressed: () {},
+                    child: Text('Done',style: TextStyle(fontSize: 16),)),
               ),
             ),
 
