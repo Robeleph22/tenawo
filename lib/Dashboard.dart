@@ -1,7 +1,9 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:tenawo/Utilites/boxTiles.dart';
 
 import 'Find Drugs/drugCategories.dart';
+import 'LoginPage.dart';
 
 
 class Dashboard extends StatefulWidget {
@@ -66,7 +68,7 @@ class _DashboardState extends State<Dashboard> {
                   Expanded(
                     child: GestureDetector(
                       onTap: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => drugCategories()));
+                        Navigator.of(context, rootNavigator: false).push(CupertinoPageRoute(builder: (context) => drugCategories()));
                       },
                       child: Container(
                         child: boxTiles(

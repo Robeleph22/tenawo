@@ -92,7 +92,7 @@ class _changePasswordState extends State<changePassword> {
 
 
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                padding: const EdgeInsets.symmetric(horizontal: 15.0),
                 child: SizedBox(
                   height: 50,
                   width: double.infinity,
@@ -100,7 +100,7 @@ class _changePasswordState extends State<changePassword> {
                       style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.orange,
                           shape: RoundedRectangleBorder(
-                            borderRadius:BorderRadius.circular(20),
+                            borderRadius:BorderRadius.circular(12),
                           )
                       ),
 

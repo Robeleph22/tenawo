@@ -52,7 +52,7 @@ class _changeProfileState extends State<changeProfile> {
               SizedBox(height: 20,),
 
               Padding(
-                padding: const EdgeInsets.only(left: 30.0),
+                padding: const EdgeInsets.only(left: 15.0),
                 child: Align(
                     alignment: Alignment.topLeft,
                     child: Text('First Name',style: TextStyle(fontWeight: FontWeight.w600,fontSize: 16),)),
@@ -65,7 +65,7 @@ class _changeProfileState extends State<changeProfile> {
               SizedBox(height: 10,),
 
               Padding(
-                padding: const EdgeInsets.only(left: 30.0),
+                padding: const EdgeInsets.only(left: 15.0),
                 child: Align(
                     alignment: Alignment.topLeft,
                     child: Text('Last Name',style: TextStyle(fontWeight: FontWeight.w600,fontSize: 16))),
@@ -78,7 +78,7 @@ class _changeProfileState extends State<changeProfile> {
               SizedBox(height: 10,),
 
               Padding(
-                padding: const EdgeInsets.only(left: 30.0),
+                padding: const EdgeInsets.only(left: 15.0),
                 child: Align(
                     alignment: Alignment.topLeft,
                     child: Text('Email',style: TextStyle(fontWeight: FontWeight.w600,fontSize: 16))),
@@ -91,7 +91,7 @@ class _changeProfileState extends State<changeProfile> {
               SizedBox(height: 10,),
 
               Padding(
-                padding: const EdgeInsets.only(left: 30.0),
+                padding: const EdgeInsets.only(left: 15.0),
                 child: Align(
                     alignment: Alignment.topLeft,
                     child: Text('Phone Number',style: TextStyle(fontWeight: FontWeight.w600,fontSize: 16))),
@@ -105,7 +105,7 @@ class _changeProfileState extends State<changeProfile> {
 
 
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                padding: const EdgeInsets.symmetric(horizontal: 15.0),
                 child: SizedBox(
                   height: 50,
                   width: double.infinity,
@@ -113,7 +113,7 @@ class _changeProfileState extends State<changeProfile> {
                       style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.orange,
                           shape: RoundedRectangleBorder(
-                            borderRadius:BorderRadius.circular(20),
+                            borderRadius:BorderRadius.circular(12),
                           )
                       ),
 

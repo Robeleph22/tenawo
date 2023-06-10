@@ -11,8 +11,9 @@ class textFiled extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 25.0),
+      padding: const EdgeInsets.symmetric(horizontal: 15.0),
       child: Container(
         decoration: BoxDecoration(
           boxShadow: [
@@ -23,11 +24,11 @@ class textFiled extends StatelessWidget {
             ),
           ],
           color:  Colors.white,
-          borderRadius: BorderRadius.circular(20),
+          borderRadius: BorderRadius.circular(12),
         ),
         child: Padding(
           padding: const EdgeInsets.only(left: 16.0),
-          child: TextField(
+          child: TextFormField(
             style: TextStyle(color: Colors.black),
             decoration: InputDecoration(
               icon: textFiledIcon,

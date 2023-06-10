@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:tenawo/Dashboard.dart';
 import 'package:tenawo/Find%20Drugs/Beauty.dart';
@@ -33,7 +34,7 @@ class _drugCategoriesState extends State<drugCategories> {
                       child: Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 7.0),
                         child: IconButton(onPressed: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => Dashboard()));
+                          Navigator.of(context, rootNavigator: false).push(CupertinoPageRoute(builder: (context) => Dashboard()));
                         },
                             icon: Icon(Icons.arrow_back,color: Colors.blue,)),
                       )),

@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:tenawo/LoginPage.dart';
 import 'package:tenawo/Profile%20Pages/changeLanguage.dart';
@@ -209,7 +210,12 @@ class _ProfileState extends State<Profile> {
                           )
                       ),
                       onPressed: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => loginPage()));
+                        final text = 'Logout Succesfull';
+                        final snackBar = SnackBar(content: Text(text),backgroundColor: Colors.blue,duration: Duration(seconds: 5),);
+
+                        ScaffoldMessenger.of(context).showSnackBar(snackBar);
+
+                        Navigator.of(context, rootNavigator: true).push(CupertinoPageRoute(builder: (context) => loginPage()));
                       }, child: Text('Logout',style: TextStyle(fontSize: 16),)),
                 ),
               ),
