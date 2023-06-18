@@ -55,9 +55,8 @@ class _DashboardState extends State<Dashboard> {
                 padding: const EdgeInsets.symmetric(horizontal: 25.0),
                 child: Align(
                   alignment: Alignment.topLeft,
-                  child: Text('Our Services',style: TextStyle(color: Colors.blue,fontSize: 18),),
+                    child: Text('Our Services',style: TextStyle(color: Colors.blue,fontSize: 18)),),
                 ),
-              ),
 
 
 
@@ -81,11 +80,16 @@ class _DashboardState extends State<Dashboard> {
                   ),
 
                   Expanded(
-                    child: Container(
-                      child: boxTiles(
-                        image: 'Images/img_1.png',
-                        text: 'Doctors',
-                        textcolor: Colors.black87,
+                    child: GestureDetector(
+                      onTap: () {
+
+                      },
+                      child: Container(
+                        child: boxTiles(
+                          image: 'Images/img_1.png',
+                          text: 'Doctor',
+                          textcolor: Colors.black87,
+                        ),
                       ),
                     ),
                   ),

@@ -83,114 +83,115 @@ class _ProfileState extends State<Profile> {
 
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 12.0),
-                child: Container(
-                  height: 418,
-                  width: double.infinity,
-                  decoration: BoxDecoration(
+                child: Flexible(
+                  child: Container(
+                    width: double.infinity,
+                    decoration: BoxDecoration(
 
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.grey.shade400,
-                        spreadRadius: 0.5,
-                        blurRadius: 5,
-                        offset: const Offset(0, 1),
-                      )
-                    ],
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                  child: Column(
-                    children: [
-                      GestureDetector(
-                        onTap:() {
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => services()));
-                        },
-                        child: ListTile(
-                          leading: Icon(Icons.miscellaneous_services_outlined,color: Colors.orange,size: 27,),
-                          title: Text('Service We Provide'),
-                          trailing: Icon(Icons.arrow_forward),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.shade400,
+                          spreadRadius: 0.5,
+                          blurRadius: 5,
+                          offset: const Offset(0, 1),
+                        )
+                      ],
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Column(
+                      children: [
+                        GestureDetector(
+                          onTap:() {
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => services()));
+                          },
+                          child: ListTile(
+                            leading: Icon(Icons.miscellaneous_services_outlined,color: Colors.orange,size: 27,),
+                            title: Text('Service We Provide'),
+                            trailing: Icon(Icons.arrow_forward),
+                          ),
                         ),
-                      ),
 
-                      Divider(height: 5,color: Colors.grey.shade400,),
+                        Divider(height: 5,color: Colors.grey.shade400,),
 
-                      GestureDetector(
-                        onTap: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => changeProfile()));
-                        },
-                        child: ListTile(
-                          leading: Icon(Icons.person,color: Colors.orange,size: 27,),
-                          title: Text('Change Profile'),
-                          trailing: Icon(Icons.arrow_forward),
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => changeProfile()));
+                          },
+                          child: ListTile(
+                            leading: Icon(Icons.person,color: Colors.orange,size: 27,),
+                            title: Text('Change Profile'),
+                            trailing: Icon(Icons.arrow_forward),
+                          ),
                         ),
-                      ),
 
 
-                      Divider(height: 5,color: Colors.grey.shade400,),
+                        Divider(height: 5,color: Colors.grey.shade400,),
 
-                      GestureDetector(
-                        onTap: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => changePassword()));
-                        },
-                        child: ListTile(
-                          leading: Icon(Icons.password,color: Colors.orange,size: 25,),
-                          title: Text('Change Password'),
-                          trailing: Icon(Icons.arrow_forward),
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => changePassword()));
+                          },
+                          child: ListTile(
+                            leading: Icon(Icons.password,color: Colors.orange,size: 25,),
+                            title: Text('Change Password'),
+                            trailing: Icon(Icons.arrow_forward),
+                          ),
                         ),
-                      ),
 
-                      Divider(height: 4,color: Colors.grey.shade400,),
+                        Divider(height: 4,color: Colors.grey.shade400,),
 
-                      GestureDetector(
-                        onTap: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => changeLanguage()));
-                        },
-                        child: ListTile(
-                          leading: Icon(Icons.language,color: Colors.orange,size: 27,),
-                          title: Text('Change Language'),
-                          trailing: Icon(Icons.arrow_forward),
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => changeLanguage()));
+                          },
+                          child: ListTile(
+                            leading: Icon(Icons.language,color: Colors.orange,size: 27,),
+                            title: Text('Change Language'),
+                            trailing: Icon(Icons.arrow_forward),
+                          ),
                         ),
-                      ),
 
-                      Divider(height: 4,color: Colors.grey.shade400,),
+                        Divider(height: 4,color: Colors.grey.shade400,),
 
-                      GestureDetector(
-                        onTap: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => feedback()));
-                        },
-                        child: ListTile(
-                          leading: Icon(Icons.question_answer_sharp,color: Colors.orange,size: 25,),
-                          title: Text('Feedback'),
-                          trailing: Icon(Icons.arrow_forward),
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => feedback()));
+                          },
+                          child: ListTile(
+                            leading: Icon(Icons.question_answer_sharp,color: Colors.orange,size: 25,),
+                            title: Text('Feedback'),
+                            trailing: Icon(Icons.arrow_forward),
+                          ),
                         ),
-                      ),
 
-                      Divider(height: 4,color: Colors.grey.shade400,),
+                        Divider(height: 4,color: Colors.grey.shade400,),
 
-                      GestureDetector(
-                        onTap: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => contactUs()));
-                        },
-                        child: ListTile(
-                          leading: Icon(Icons.phone,color: Colors.orange,size: 25,),
-                          title: Text('Contact Us'),
-                          trailing: Icon(Icons.arrow_forward),
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => contactUs()));
+                          },
+                          child: ListTile(
+                            leading: Icon(Icons.phone,color: Colors.orange,size: 25,),
+                            title: Text('Contact Us'),
+                            trailing: Icon(Icons.arrow_forward),
+                          ),
                         ),
-                      ),
 
-                      Divider(height: 4,color: Colors.grey.shade400,),
+                        Divider(height: 4,color: Colors.grey.shade400,),
 
-                      GestureDetector(
-                        onTap: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => aboutUs()));
-                        },
-                        child: ListTile(
-                          leading: Icon(Icons.contact_support,color: Colors.orange,size: 25,),
-                          title: Text('About Us'),
-                          trailing: Icon(Icons.arrow_forward),
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => aboutUs()));
+                          },
+                          child: ListTile(
+                            leading: Icon(Icons.contact_support,color: Colors.orange,size: 25,),
+                            title: Text('About Us'),
+                            trailing: Icon(Icons.arrow_forward),
+                          ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
               ),

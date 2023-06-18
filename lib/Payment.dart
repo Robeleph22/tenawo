@@ -53,7 +53,7 @@ class _PaymentsState extends State<Payments> {
             SizedBox(height: 5,),
 
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 25.0),
+              padding: const EdgeInsets.symmetric(horizontal: 15.0),
               child: Align(
                 alignment: Alignment.centerLeft,
                 child: Text('Payments',style: TextStyle(color: Colors.orange,fontSize: 20),),
@@ -63,7 +63,7 @@ class _PaymentsState extends State<Payments> {
             SizedBox(height: 20,),
 
             Padding(
-              padding: const EdgeInsets.only(left: 30.0),
+              padding: const EdgeInsets.only(left: 15.0),
               child: Align(
                   alignment: Alignment.topLeft,
                   child: Text('Appointment Number',style: TextStyle(fontWeight: FontWeight.w600,fontSize: 16),)),
@@ -72,7 +72,7 @@ class _PaymentsState extends State<Payments> {
             SizedBox(height: 10,),
 
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 25.0),
+            padding: const EdgeInsets.symmetric(horizontal: 15.0),
             child: Container(
               height: 50,
               decoration: BoxDecoration(
@@ -84,7 +84,7 @@ class _PaymentsState extends State<Payments> {
                   ),
                 ],
                 color:  Colors.white,
-                borderRadius: BorderRadius.circular(20),
+                borderRadius: BorderRadius.circular(12),
               ),
               child: Padding(
                 padding: const EdgeInsets.only(left: 16.0),
@@ -105,7 +105,7 @@ class _PaymentsState extends State<Payments> {
           SizedBox(height: 15,),
 
             Padding(
-              padding: const EdgeInsets.only(left: 30.0),
+              padding: const EdgeInsets.only(left: 15.0),
               child: Align(
                   alignment: Alignment.topLeft,
                   child: Text('Service Type',style: TextStyle(fontWeight: FontWeight.w600,fontSize: 16),)),
@@ -114,7 +114,7 @@ class _PaymentsState extends State<Payments> {
             SizedBox(height: 10,),
 
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 25.0),
+              padding: const EdgeInsets.symmetric(horizontal: 15.0),
               child: Container(
                 decoration: BoxDecoration(
                   boxShadow: [
@@ -125,13 +125,13 @@ class _PaymentsState extends State<Payments> {
                     ),
                   ],
                   color:  Colors.white,
-                  borderRadius: BorderRadius.circular(20),
+                  borderRadius: BorderRadius.circular(12),
                 ),
                 child: DropdownButtonFormField(
                   decoration: InputDecoration(
                     border: OutlineInputBorder(
                       borderSide: BorderSide.none,
-                      borderRadius: BorderRadius.circular(20),
+                      borderRadius: BorderRadius.circular(12),
                     )
                   ),
                   value: _value,
@@ -160,7 +160,7 @@ class _PaymentsState extends State<Payments> {
             SizedBox(height: 15,),
 
             Padding(
-              padding: const EdgeInsets.only(left: 30.0),
+              padding: const EdgeInsets.only(left: 15.0),
               child: Align(
                   alignment: Alignment.topLeft,
                   child: Text('Paymnet Method',style: TextStyle(fontWeight: FontWeight.w600,fontSize: 16),)),
@@ -169,7 +169,7 @@ class _PaymentsState extends State<Payments> {
             SizedBox(height: 10,),
 
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 25.0),
+              padding: const EdgeInsets.symmetric(horizontal: 15.0),
               child: Container(
                 decoration: BoxDecoration(
                   boxShadow: [
@@ -180,13 +180,13 @@ class _PaymentsState extends State<Payments> {
                     ),
                   ],
                   color:  Colors.white,
-                  borderRadius: BorderRadius.circular(20),
+                  borderRadius: BorderRadius.circular(12),
                 ),
                 child: DropdownButtonFormField(
                   decoration: InputDecoration(
                       border: OutlineInputBorder(
                         borderSide: BorderSide.none,
-                        borderRadius: BorderRadius.circular(20),
+                        borderRadius: BorderRadius.circular(12),
                       )
                   ),
                   value: _value,
@@ -203,7 +203,7 @@ class _PaymentsState extends State<Payments> {
             SizedBox(height: 15,),
 
             Padding(
-              padding: const EdgeInsets.only(left: 30.0),
+              padding: const EdgeInsets.only(left: 15.0),
               child: Align(
                   alignment: Alignment.topLeft,
                   child: Text('Upload Paymnet',style: TextStyle(fontWeight: FontWeight.w600,fontSize: 16),)),
@@ -212,7 +212,7 @@ class _PaymentsState extends State<Payments> {
             SizedBox(height: 10,),
 
            Padding(
-             padding: const EdgeInsets.symmetric(horizontal: 25.0),
+             padding: const EdgeInsets.symmetric(horizontal: 15.0),
              child: Container(
                height: 120,
                width: double.infinity,
@@ -226,9 +226,9 @@ class _PaymentsState extends State<Payments> {
                  ],
                  color:  Colors.white,
                  border: Border.all(color: Colors.blue),
-                 borderRadius: BorderRadius.circular(20),
+                 borderRadius: BorderRadius.circular(12),
                ),
-               child: image != null ? Image.file(image!,width: 50,height: 100) :
+               child: image != null ? Image.file(image!,width: 50,height: 100,fit: BoxFit.cover,) :
                Row(
                  mainAxisAlignment: MainAxisAlignment.center,
                  children: [
@@ -274,7 +274,7 @@ class _PaymentsState extends State<Payments> {
 
 
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 25.0),
+              padding: const EdgeInsets.symmetric(horizontal: 15.0),
               child: SizedBox(
                 height: 50,
                 width: double.infinity,
@@ -282,7 +282,7 @@ class _PaymentsState extends State<Payments> {
                     style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.orange,
                         shape: RoundedRectangleBorder(
-                          borderRadius:BorderRadius.circular(15),
+                          borderRadius:BorderRadius.circular(12),
                         )
                     ),
 

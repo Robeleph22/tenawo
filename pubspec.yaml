@@ -40,10 +40,17 @@ dependencies:
   url_launcher: ^6.1.10
   provider: ^6.0.5
   email_validator: ^2.1.17
+  get: ^4.6.5
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: ^0.13.1
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "Images/tenawologo.png"
 
 
   # The "flutter_lints" package below contains a set of recommended lints to
@@ -58,10 +65,7 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
-
-  # The following line ensures that the Material Icons font is
-  # included with your application, so that you can use the icons in
-  # the material Icons class.
+  generate: true
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
